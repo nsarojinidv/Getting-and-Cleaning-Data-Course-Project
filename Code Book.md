@@ -36,77 +36,76 @@ Create a tidy data set From the intermediate data set is created a final tidy da
 
 The following table shows a table with all variables in the output file. The first column in the table shows the column number of the variable, the second column shows the variable name and column three shows the source variable used to compute the value of the variable.
 
-
-No|Variables|Source Variables
---|:--------|:---------------
-1|subject|subject id from subjects file
-2|activity|activity id from labels file
-3|timeBodyAccelerometer-Mean-X|tBodyAcc-mean()-X
-4|timeBodyAccelerometer-Mean-Y|tBodyAcc-mean()-Y
-5|timeBodyAccelerometer-Mean-Z|tBodyAcc-mean()-Z
-6|timeBodyAccelerometer-StandardDeviation-X|tBodyAcc-std()-X
-7|timeBodyAccelerometer-StandardDeviation-Y|tBodyAcc-std()-Y
-8|timeBodyAccelerometer-StandardDeviation-Z|tBodyAcc-std()-Z
-9|timeGravityAccelerometer-Mean-X|tGravityAcc-mean()-X
-10|timeGravityAccelerometer-Mean-Y|tGravityAcc-mean()-Y
-11|timeGravityAccelerometer-Mean-Z|tGravityAcc-mean()-Z
-12|timeGravityAccelerometer-StandardDeviation-X|tGravityAcc-std()-X
-13|timeGravityAccelerometer-StandardDeviation-Y|tGravityAcc-std()-Y
-14|timeGravityAccelerometer-StandardDeviation-Z|tGravityAcc-std()-Z
-15|timeBodyAccelerometerJerk-Mean-X|tBodyAccJerk-mean()-X
-16|timeBodyAccelerometerJerk-Mean-Y|tBodyAccJerk-mean()-Y
-17|timeBodyAccelerometerJerk-Mean-Z|tBodyAccJerk-mean()-Z
-18|timeBodyAccelerometerJerk-StandardDeviation-X|tBodyAccJerk-std()-X
-19|timeBodyAccelerometerJerk-StandardDeviation-Y|tBodyAccJerk-std()-Y
-20|timeBodyAccelerometerJerk-StandardDeviation-Z|tBodyAccJerk-std()-Z
-21|timeBodyGyroscope-Mean-X|tBodyGyro-mean()-X
-22|timeBodyGyroscope-Mean-Y|tBodyGyro-mean()-Y
-23|timeBodyGyroscope-Mean-Z|tBodyGyro-mean()-Z
-24|timeBodyGyroscope-StandardDeviation-X|tBodyGyro-std()-X
-25|timeBodyGyroscope-StandardDeviation-Y|tBodyGyro-std()-Y
-26|timeBodyGyroscope-StandardDeviation-Z|tBodyGyro-std()-Z
-27|timeBodyGyroscopeJerk-Mean-X|tBodyGyroJerk-mean()-X
-28|timeBodyGyroscopeJerk-Mean-Y|tBodyGyroJerk-mean()-Y
-29|timeBodyGyroscopeJerk-Mean-Z|tBodyGyroJerk-mean()-Z
-30|timeBodyGyroscopeJerk-StandardDeviation-X|tBodyGyroJerk-std()-X
-31|timeBodyGyroscopeJerk-StandardDeviation-Y|tBodyGyroJerk-std()-Y
-32|timeBodyGyroscopeJerk-StandardDeviation-Z|tBodyGyroJerk-std()-Z
-33|timeBodyAccelerometerMagnitude-Mean|tBodyAccMag-mean()
-34|timeBodyAccelerometerMagnitude-StandardDeviation|tBodyAccMag-std()
-35|timeGravityAccelerometerMagnitude-Mean|tGravityAccMag-mean()
-36|timeGravityAccelerometerMagnitude-StandardDeviation|tGravityAccMag-std()
-37|timeBodyAccelerometerJerkMagnitude-Mean|tBodyAccJerkMag-mean()
-38|timeBodyAccelerometerJerkMagnitude-StandardDeviation|tBodyAccJerkMag-std()
-39|timeBodyGyroscopeMagnitude-Mean|tBodyGyroMag-mean()
-40|timeBodyGyroscopeMagnitude-StandardDeviation|tBodyGyroMag-std()
-41|timeBodyGyroscopeJerkMagnitude-Mean|tBodyGyroJerkMag-mean()
-42|timeBodyGyroscopeJerkMagnitude-StandardDeviation|tBodyGyroJerkMag-std()
-43|frequencyBodyAccelerometer-Mean-X|fBodyAcc-mean()-X
-44|frequencyBodyAccelerometer-Mean-Y|fBodyAcc-mean()-Y
-45|frequencyBodyAccelerometer-Mean-Z|fBodyAcc-mean()-Z
-46|frequencyBodyAccelerometer-StandardDeviation-X|fBodyAcc-std()-X
-47|frequencyBodyAccelerometer-StandardDeviation-Y|fBodyAcc-std()-Y
-48|frequencyBodyAccelerometer-StandardDeviation-Z|fBodyAcc-std()-Z
-49|frequencyBodyAccelerometerJerk-Mean-X|fBodyAccJerk-mean()-X
-50|frequencyBodyAccelerometerJerk-Mean-Y|fBodyAccJerk-mean()-Y
-51|frequencyBodyAccelerometerJerk-Mean-Z|fBodyAccJerk-mean()-Z
-52|frequencyBodyAccelerometerJerk-StandardDeviation-X|fBodyAccJerk-std()-X
-53|frequencyBodyAccelerometerJerk-StandardDeviation-Y|fBodyAccJerk-std()-Y
-54|frequencyBodyAccelerometerJerk-StandardDeviation-Z|fBodyAccJerk-std()-Z
-55|frequencyBodyGyroscope-Mean-X|fBodyGyro-mean()-X
-56|frequencyBodyGyroscope-Mean-Y|fBodyGyro-mean()-Y
-57|frequencyBodyGyroscope-Mean-Z|fBodyGyro-mean()-Z
-58|frequencyBodyGyroscope-StandardDeviation-X|fBodyGyro-std()-X
-59|frequencyBodyGyroscope-StandardDeviation-Y|fBodyGyro-std()-Y
-60|frequencyBodyGyroscope-StandardDeviation-Z|fBodyGyro-std()-Z
-61|frequencyBodyAccelerometerMagnitude-Mean|fBodyAccMag-mean()
-62|frequencyBodyAccelerometerMagnitude-StandardDeviation|fBodyAccMag-std()
-63|frequencyBodyAccelerometerJerkMagnitude-Mean|fBodyBodyAccJerkMag-mean()
-64|frequencyBodyAccelerometerJerkMagnitude-StandardDeviation|fBodyBodyAccJerkMag-std()
-65|frequencyBodyGyroscopeMagnitude-Mean|fBodyBodyGyroMag-mean()
-66|frequencyBodyGyroscopeMagnitude-StandardDeviation|fBodyBodyGyroMag-std()
-67|frequencyBodyGyroscopeJerkMagnitude-Mean|fBodyBodyGyroJerkMag-mean()
-68|frequencyBodyGyroscopeJerkMagnitude-StandardDeviation|fBodyBodyGyroJerkMag-std()
+| No     |                         Variable                        |        source variable        |
+| ------ | :------------------------------------------------------ | :---------------------------- |
+|      1 | subjectid                                               | subject id from subjects file |
+|      2 | activityname                                            | activity id from labels file  |
+|      3 | timeBodyAccelerationMeanX                               | tBodyAcc-mean()-X             |
+|      4 | timeBodyAccelerationMeanY                               | tBodyAcc-mean()-Y             |
+|      5 | timeBodyAccelerationMeanZ                               | tBodyAcc-mean()-Z             |
+|      6 | timeBodyAccelerationStandarddeviationX                  | tBodyAcc-std()-X              |
+|      7 | timeBodyAccelerationStandarddeviationY                  | tBodyAcc-std()-Y              |
+|      8 | timeBodyAccelerationStandarddeviationZ                  | tBodyAcc-std()-Z              |
+|      9 | timeGravityAccelerationMeanX                            | tGravityAcc-mean()-X          |
+|     10 | timeGravityAccelerationMeanY                            | tGravityAcc-mean()-Y          |
+|     11 | timeGravityAccelerationMeanZ                            | tGravityAcc-mean()-Z          |
+|     12 | timeGravityAccelerationStandarddeviationX               | tGravityAcc-std()-X           |
+|     13 | timeGravityAccelerationStandarddeviationY               | tGravityAcc-std()-Y           |
+|     14 | timeGravityAccelerationStandarddeviationZ               | tGravityAcc-std()-Z           |
+|     15 | timeBodyAccelerationJerkMeanX                           | tBodyAccJerk-mean()-X         |
+|     16 | timeBodyAccelerationJerkMeanY                           | tBodyAccJerk-mean()-Y         |
+|     17 | timeBodyAccelerationJerkMeanZ                           | tBodyAccJerk-mean()-Z         |
+|     18 | timeBodyAccelerationJerkStandarddeviationX              | tBodyAccJerk-std()-X          |
+|     19 | timeBodyAccelerationJerkStandarddeviationY              | tBodyAccJerk-std()-Y          |
+|     20 | timeBodyAccelerationJerkStandarddeviationZ              | tBodyAccJerk-std()-Z          |
+|     21 | timeBodyGyroscopeMeanX                                  | tBodyGyro-mean()-X            |
+|     22 | timeBodyGyroscopeMeanY                                  | tBodyGyro-mean()-Y            |
+|     23 | timeBodyGyroscopeMeanZ                                  | tBodyGyro-mean()-Z            |
+|     24 | timeBodyGyroscopeStandarddeviationX                     | tBodyGyro-std()-X             |
+|     25 | timeBodyGyroscopeStandarddeviationY                     | tBodyGyro-std()-Y             |
+|     26 | timeBodyGyroscopeStandarddeviationZ                     | tBodyGyro-std()-Z             |
+|     27 | timeBodyGyroscopeJerkMeanX                              | tBodyGyroJerk-mean()-X        |
+|     28 | timeBodyGyroscopeJerkMeanY                              | tBodyGyroJerk-mean()-Y        |
+|     29 | timeBodyGyroscopeJerkMeanZ                              | tBodyGyroJerk-mean()-Z        |
+|     30 | timeBodyGyroscopeJerkStandarddeviationX                 | tBodyGyroJerk-std()-X         |
+|     31 | timeBodyGyroscopeJerkStandarddeviationY                 | tBodyGyroJerk-std()-Y         |
+|     32 | timeBodyGyroscopeJerkStandarddeviationZ                 | tBodyGyroJerk-std()-Z         |
+|     33 | timeBodyAccelerationMagnitudeMean                       | tBodyAccMag-mean()            |
+|     34 | timeBodyAccelerationMagnitudeStandarddeviation          | tBodyAccMag-std()             |
+|     35 | timeGravityAccelerationMagnitudeMean                    | tGravityAccMag-mean()         |
+|     36 | timeGravityAccelerationMagnitudeStandarddeviation       | tGravityAccMag-std()          |
+|     37 | timeBodyAccelerationJerkMagnitudeMean                   | tBodyAccJerkMag-mean()        |
+|     38 | timeBodyAccelerationJerkMagnitudeStandarddeviation      | tBodyAccJerkMag-std()         |
+|     39 | timeBodyGyroscopeMagnitudeMean                          | tBodyGyroMag-mean()           |
+|     40 | timeBodyGyroscopeMagnitudeStandarddeviation             | tBodyGyroMag-std()            |
+|     41 | timeBodyGyroscopeJerkMagnitudeMean                      | tBodyGyroJerkMag-mean()       |
+|     42 | timeBodyGyroscopeJerkMagnitudeStandarddeviation         | tBodyGyroJerkMag-std()        |
+|     43 | frequencyBodyAccelerationMeanX                          | fBodyAcc-mean()-X             |
+|     44 | frequencyBodyAccelerationMeanY                          | fBodyAcc-mean()-Y             |
+|     45 | frequencyBodyAccelerationMeanZ                          | fBodyAcc-mean()-Z             |
+|     46 | frequencyBodyAccelerationStandarddeviationX             | fBodyAcc-std()-X              |
+|     47 | frequencyBodyAccelerationStandarddeviationY             | fBodyAcc-std()-Y              |
+|     48 | frequencyBodyAccelerationStandarddeviationZ             | fBodyAcc-std()-Z              |
+|     49 | frequencyBodyAccelerationJerkMeanX                      | fBodyAccJerk-mean()-X         |
+|     50 | frequencyBodyAccelerationJerkMeanY                      | fBodyAccJerk-mean()-Y         |
+|     51 | frequencyBodyAccelerationJerkMeanZ                      | fBodyAccJerk-mean()-Z         |
+|     52 | frequencyBodyAccelerationJerkStandarddeviationX         | fBodyAccJerk-std()-X          |
+|     53 | frequencyBodyAccelerationJerkStandarddeviationY         | fBodyAccJerk-std()-Y          |
+|     54 | frequencyBodyAccelerationJerkStandarddeviationZ         | fBodyAccJerk-std()-Z          |
+|     55 | frequencyBodyGyroscopeMeanX                             | fBodyGyro-mean()-X            |
+|     56 | frequencyBodyGyroscopeMeanY                             | fBodyGyro-mean()-Y            |
+|     57 | frequencyBodyGyroscopeMeanZ                             | fBodyGyro-mean()-Z            |
+|     58 | frequencyBodyGyroscopeStandarddeviationX                | fBodyGyro-std()-X             |
+|     59 | frequencyBodyGyroscopeStandarddeviationY                | fBodyGyro-std()-Y             |
+|     60 | frequencyBodyGyroscopeStandarddeviationZ                | fBodyGyro-std()-Z             |
+|     61 | frequencyBodyAccelerationMagnitudeMean                  | fBodyAccMag-mean()            |
+|     62 | frequencyBodyAccelerationMagnitudeStandarddeviation     | fBodyAccMag-std()             |
+|     63 | frequencyBodyAccelerationJerkMagnitudeMean              | fBodyBodyAccJerkMag-mean()    |
+|     64 | frequencyBodyAccelerationJerkMagnitudeStandarddeviation | fBodyBodyAccJerkMag-std()     |
+|     65 | frequencyBodyGyroscopeMagnitudeMean                     | fBodyBodyGyroMag-mean()       |
+|     66 | frequencyBodyGyroscopeMagnitudeStandarddeviation        | fBodyBodyGyroMag-std()        |
+|     67 | frequencyBodyGyroscopeJerkMagnitudeMean                 | fBodyBodyGyroJerkMag-mean()   |
+|     68 | frequencyBodyGyroscopeJerkMagnitudeStandarddeviation    | fBodyBodyGy
 
 
 
