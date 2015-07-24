@@ -105,7 +105,7 @@ The following table shows a table with all variables in the output file. The fir
 |     65 | frequencyBodyGyroscopeMagnitudeMean                     | fBodyBodyGyroMag-mean()       |
 |     66 | frequencyBodyGyroscopeMagnitudeStandarddeviation        | fBodyBodyGyroMag-std()        |
 |     67 | frequencyBodyGyroscopeJerkMagnitudeMean                 | fBodyBodyGyroJerkMag-mean()   |
-|     68 | frequencyBodyGyroscopeJerkMagnitudeStandarddeviation    | fBodyBodyGy
+|     68 | frequencyBodyGyroscopeJerkMagnitudeStandarddeviation    | fBodyBodyGyroJerkMag-std()    |
 
 
 
