@@ -36,8 +36,9 @@ Create a tidy data set From the intermediate data set is created a final tidy da
 
 The following table shows a table with all variables in the output file. The first column in the table shows the column number of the variable, the second column shows the variable name and column three shows the source variable used to compute the value of the variable.
 
+
 No|Variables|Source Variables
---|:--------|:--------------
+--|:--------|:---------------
 1|subject|subject id from subjects file
 2|activity|activity id from labels file
 3|timeBodyAccelerometer-Mean-X|tBodyAcc-mean()-X
